@@ -161,7 +161,8 @@ h2 {
         flex-grow: 1;
 
     }
-    .countdown{
+
+    .countdown {
         gap: 15px;
     }
 }
@@ -180,4 +181,9 @@ button {
     margin-bottom: 20px;
     text-align: center;
     flex-wrap: wrap;
+
+}
+
+.event-card:hover {
+    text-decoration: underline;
 }
