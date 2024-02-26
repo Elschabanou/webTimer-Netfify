@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+
+:root {
+    --background-color: black;
+    /* Background color */
+    --main-color: #F4FFCA;
+    /* Main color */
+    --white-color: #edf8ee;
+}
+
+body {
+    font-family: "Inria Serif";
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    margin: 0;
+    overflow-x: hidden;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+#subtitle {
+    font-size: 32px;
+}
+
+.countdown div {
+    text-align: left;
+    font-family: "Inria Serif";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+
+}
+
+img {
+    width: 450px;
+    height: auto;
+}
+
+header {
+    color: var(--background-color);
+    font-family: "Sarina";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    width: 100%;
+}
+
+.top-Content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px 0px 100px;
+    flex-wrap: wrap;
+
+}
+
+.countNumer {
+    color: var(--background-color);
+    font-family: "Inria Serif";
+    font-size: 98px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+#seconds {
+    font-size: 40px !important;
+    margin-bottom: 35px;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    min-width: 50px;
+
+}
+
+.singelCounter {
+    text-align: left !important;
+
+}
+
+.subtitleCounter {
+    color: var(--background-color);
+    font-family: "Inria Serif";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inner-top-Content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.upcoming-Events {
+    background-color: var(--background-color);
+    padding: 40px 10% 100px 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #B2CF5A;
+    padding-bottom: 40px;
+}
+
+#date {
+    background-color: var(--main-color);
+    color: var(--background-color) !important;
+    padding: 10px 30px 10px 0;
+    min-width: 170px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 560px) {
+    .countNumer {
+        font-size: 50px;
+    }
+
+    .top-Content {
+        padding: 40px 0 40px 0;
+    }
+
+    #seconds {
+        font-size: 20px !important;
+        min-width: 25px;
+        margin-bottom: 30px;
+    }
+
+    #subtitle {
+        font-size: 20px;
+    }
+
+    img {
+        flex-grow: 1;
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #date {
+        padding: 0 !important;
+        margin-top: 10px;
+        flex-grow: 1;
+
+    }
+    .countdown{
+        gap: 15px;
+    }
+}
+
+button {
+    background-color: white;
+}
+
+.event-card {
+    font-size: 20px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
