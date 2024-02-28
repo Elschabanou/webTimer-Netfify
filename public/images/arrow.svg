@@ -1,8 +1,10 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="500" height="500">
 	<title>New Project</title>
 	<style>
 		.s0 { fill: none;stroke: #000000;stroke-linecap: round;stroke-miterlimit:100;stroke-width: 35 } 
 	</style>
-	<path id="Background" class="s0" d="m1043.4 478.5c-170.1 1.6-218.1 204.1-444.3 222.6-173.1 14.2-386.9-200.6-386.9-200.6"/>
-	<path id="Shape 1" class="s0" d="m345.4 399.7c-101.1 72.7-195.4 62.5-195.4 62.5 0 0 56.5 85.2 67.2 182.7"/>
+	<g id="Folder 1">
+		<path id="Background" class="s0" d="m1043.4 478.5c-170.1 1.6-218.1 204.1-444.3 222.6-173.1 14.2-386.9-200.6-386.9-200.6"/>
+		<path id="Shape 1" class="s0" d="m345.4 399.7c-101.1 72.7-195.4 62.5-195.4 62.5 0 0 56.5 85.2 67.2 182.7"/>
+	</g>
 </svg>

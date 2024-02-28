@@ -198,29 +198,29 @@ button {
 .back-to-home {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.back-home{
+.back-home {
     text-decoration: none;
     color: var(--background-color);
     font-weight: bold;
 }
 
-.back-home:hover{
+.back-home:hover {
     text-decoration: underline;
-    
+
 }
 
-.back-home:hover + .back-arrow {
+.back-home:hover+.back-arrow {
     transform: scale(1.2) translateX(-10px) rotate(5deg);
 }
 
-.back-arrow{
-    width:60px;
-    height: auto;
+.back-arrow {
+    width: 60px;
+    height: 50px;
     transition: transform 0.3s ease;
-
+    min-width: none;
 }
