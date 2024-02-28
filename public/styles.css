@@ -117,6 +117,13 @@ header {
     margin: 0 auto;
 }
 
+.additional-info {
+    background-color: var(--background-color);
+    padding: 40px 10% 100px 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 h2 {
     color: #B2CF5A;
     padding-bottom: 40px;
@@ -186,4 +193,34 @@ button {
 
 .event-card:hover {
     text-decoration: underline;
+}
+
+.back-to-home {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.back-home{
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.back-home:hover{
+    text-decoration: underline;
+    
+}
+
+.back-home:hover + .back-arrow {
+    transform: scale(1.2) translateX(-10px) rotate(5deg);
+}
+
+.back-arrow{
+    width:60px;
+    height: auto;
+    transition: transform 0.3s ease;
+
 }
