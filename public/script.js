@@ -25,6 +25,7 @@ var x = setInterval(function () {
     document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
 
     // If the countdown is over, display a message
+    // optional very cool visuals
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
@@ -78,22 +79,4 @@ function displayNoEventsMessages() {
     var eventsList = document.getElementById('eventsList');
     eventsList.textContent = "No events found";
 }
-
-// Get event title from URL query parameters
-const urlParams = new URLSearchParams(window.location.search);
-const eventTitle = urlParams.get('title');
-
-// Function to fetch event details from JSON file and display them
-fetch('json/events.json')
-    .then(response => response.json())
-    .then(events => {
-        const event = events.find(event => event.title === eventTitle);
-        console.log(event);
-        if (event) {
-            displayEventDetails(event);
-        } else {
-            document.getElementById('eventDetails').textContent = 'Event not found';
-        }
-    })
-    .catch(error => console.log('Error fetching events:', error));
 
