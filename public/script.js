@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 14, 2024 12:30:00").getTime();
+/*var countDownDate = new Date("Jul 14, 2024 12:30:00").getTime();
 
 
 // Update the countdown every 1 second
@@ -37,7 +37,7 @@ fetch('events.json')
 .then(events => {
     displayEvents(events);
 })
-.catch(error => console.log(error));
+.catch(error => console.log(error));*/
 
 // Function to display events
 function displayEvents(events) {
