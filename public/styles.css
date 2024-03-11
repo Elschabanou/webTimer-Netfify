@@ -234,9 +234,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 60px 0px;
     gap: 40px;
     background: black;
+    border-top: 1px solid var(--main-color);
 }
 
 footer a{
