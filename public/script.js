@@ -1,4 +1,4 @@
-/*var countDownDate = new Date("Jul 14, 2024 12:30:00").getTime();
+var countDownDate = new Date("Jul 14, 2024 12:30:00").getTime();
 
 
 // Update the countdown every 1 second
@@ -30,7 +30,7 @@ var x = setInterval(function () {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-*/
+
 // Load events from JSON file
 fetch('events.json')
 .then(response => response.json())
