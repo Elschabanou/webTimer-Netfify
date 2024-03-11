@@ -64,7 +64,7 @@ function displayEvents(events) {
 
         // Add event link to the event name
         var eventLink = document.createElement('a');
-        eventLink.href = 'events.html?title=' + encodeURIComponent(event.title);
+        eventLink.href = 'events/' + 'events.html?title=' + encodeURIComponent(event.title);
         eventLink.appendChild(eventName);
 
         eventElement.appendChild(eventLink);
