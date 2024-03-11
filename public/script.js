@@ -53,7 +53,7 @@ events.forEach(function(event) {
     eventName.textContent = event.title;
 
     var eventDateTime = document.createElement('div');
-    eventDateTime.classList.add("date")
+    eventDateTime.id.add("date")
     var dateTime = new Date(event.dateTime);
     eventDateTime.textContent = "Date: " + dateTime.toDateString();
 
@@ -92,7 +92,7 @@ function displayEventDetails(event) {
 
     var headerElement = document.querySelector('.header-title');
     headerElement.textContent = event.title;
-    
+
     var eventDetails = document.getElementById('eventDetails');
 
     var eventTitleElement = document.createElement('h2');
