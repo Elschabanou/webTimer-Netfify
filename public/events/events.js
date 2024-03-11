@@ -1,3 +1,7 @@
+// Load events from JSON file
+fetch('json/events.json')
+    .then(response => response.json())
+   
 // Function to display event details
 function displayEventDetails(event) {
 

@@ -96,3 +96,4 @@ fetch('json/events.json')
         }
     })
     .catch(error => console.log('Error fetching events:', error));
+
