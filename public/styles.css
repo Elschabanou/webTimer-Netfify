@@ -231,5 +231,18 @@ footer a:hover {
 #back-btn:hover{
     stroke: grey;
     transform: scale(1.1);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.4s ease-in;
 }
+
+#login-btn{
+    position:absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#login-btn:hover{
+    stroke: grey;
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in;
+}
+
