@@ -30,14 +30,14 @@ var x = setInterval(function () {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-
+*/
 // Load events from JSON file
 fetch('events.json')
 .then(response => response.json())
 .then(events => {
     displayEvents(events);
 })
-.catch(error => console.log(error));*/
+.catch(error => console.log(error));
 
 // Function to display events
 function displayEvents(events) {
