@@ -46,12 +46,14 @@ var eventsList = document.getElementById('eventsList');
 // Loop through the events array and create HTML elements for each event
 events.forEach(function(event) {
     var eventElement = document.createElement('div');
-    eventElement.classList.add('event');
+    eventElement.classList.add('event-card');
 
-    var eventName = document.createElement('h2');
+    var eventName = document.createElement('div');
+    eventName.classList.add("title");
     eventName.textContent = event.title;
 
-    var eventDateTime = document.createElement('p');
+    var eventDateTime = document.createElement('div');
+    eventDateTime.classList.add("date")
     var dateTime = new Date(event.dateTime);
     eventDateTime.textContent = "Date: " + dateTime.toDateString();
 
