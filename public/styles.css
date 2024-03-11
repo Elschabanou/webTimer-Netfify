@@ -225,6 +225,6 @@ button {
     min-width: none;
 }
 
-.eventsList a{
+.event-card a {
     text-decoration: none;
 }

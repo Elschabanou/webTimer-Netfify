@@ -60,7 +60,7 @@ function displayEvents(events) {
         var eventDateTime = document.createElement('div');
         eventDateTime.id = "date";
         var dateTime = new Date(event.dateTime);
-        eventDateTime.textContent = "Date: " + dateTime.toDateString();
+        eventDateTime.textContent = dateTime.toDateString();
 
         // Add event link to the event name
         var eventLink = document.createElement('a');
@@ -74,7 +74,7 @@ function displayEvents(events) {
     });
 }
 
-function displayNoEventsMessages(){
+function displayNoEventsMessages() {
     var eventsList = document.getElementById('eventsList');
     eventsList.textContent = "No events found";
 }
