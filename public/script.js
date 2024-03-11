@@ -67,38 +67,38 @@ events.forEach(function(event) {
 });
 }
 
-// Get event name from URL query parameters
+// Get event title from URL query parameters
 const urlParams = new URLSearchParams(window.location.search);
-const eventName = urlParams.get('title');
+const eventTitle = urlParams.get('title');
 
 // Function to fetch event details from JSON file and display them
 fetch('events.json')
     .then(response => response.json())
     .then(events => {
-        const event = events.find(event => event.title === eventName);
+        const event = events.find(event => event.title === eventTitle);
         if (event) {
             displayEventDetails(event);
         } else {
             document.getElementById('eventDetails').textContent = 'Event not found';
         }
     })
-    .catch(error => console.log(error));
+    .catch(error => console.log('Error fetching events:', error));
 
 // Function to display event details
 function displayEventDetails(event) {
     var eventDetails = document.getElementById('eventDetails');
 
-    var eventNameElement = document.createElement('h2');
-    eventNameElement.textContent = event.title;
+    var eventTitleElement = document.createElement('h2');
+    eventTitleElement.textContent = event.title;
 
-    var eventInfoElement = document.createElement('p');
-    eventInfoElement.textContent = event.description;
+    var eventDescriptionElement = document.createElement('p');
+    eventDescriptionElement.textContent = event.description;
 
     var eventDateTimeElement = document.createElement('p');
     var dateTime = new Date(event.dateTime);
     eventDateTimeElement.textContent = "Date & Time: " + dateTime.toLocaleString();
 
-    eventDetails.appendChild(eventNameElement);
-    eventDetails.appendChild(eventInfoElement);
+    eventDetails.appendChild(eventTitleElement);
+    eventDetails.appendChild(eventDescriptionElement);
     eventDetails.appendChild(eventDateTimeElement);
 }
