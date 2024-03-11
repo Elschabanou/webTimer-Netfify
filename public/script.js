@@ -105,9 +105,6 @@ function displayEventDetails(event) {
 
     var eventDetails = document.getElementById('eventDetails');
 
-    var eventTitleElement = document.createElement('h2');
-    eventTitleElement.textContent = event.title;
-
     var eventDescriptionElement = document.createElement('p');
     eventDescriptionElement.textContent = event.description;
 
