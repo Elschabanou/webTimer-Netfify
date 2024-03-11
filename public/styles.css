@@ -188,7 +188,6 @@ button {
     margin-bottom: 20px;
     text-align: center;
     flex-wrap: wrap;
-
 }
 
 .event-card:hover {
@@ -227,4 +226,6 @@ button {
 
 .event-card a {
     text-decoration: none;
+    color: var(--main-color);
+    padding-left: 30px;
 }
