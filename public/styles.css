@@ -229,3 +229,17 @@ button {
     color: var(--main-color);
     padding-left: 30px;
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
