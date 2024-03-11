@@ -76,6 +76,7 @@ fetch('events.json')
     .then(response => response.json())
     .then(events => {
         const event = events.find(event => event.title === eventTitle);
+        console.log(event);
         if (event) {
             displayEventDetails(event);
         } else {
