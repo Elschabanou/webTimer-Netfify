@@ -103,16 +103,7 @@ function displayEventDetails(event) {
     var headerElement = document.querySelector('.header-title');
     headerElement.textContent = event.title;
 
-    var eventDetails = document.getElementById('eventDetails');
+    var eventDescription = document.getElementById('description');
+    eventDescription.textContent = event.description;
 
-    var eventDescriptionElement = document.createElement('p');
-    eventDescriptionElement.textContent = event.description;
-
-    var eventDateTimeElement = document.createElement('p');
-    var dateTime = new Date(event.dateTime);
-    eventDateTimeElement.textContent = "Date & Time: " + dateTime.toLocaleString();
-
-    eventDetails.appendChild(eventTitleElement);
-    eventDetails.appendChild(eventDescriptionElement);
-    eventDetails.appendChild(eventDateTimeElement);
 }
