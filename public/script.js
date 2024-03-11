@@ -68,13 +68,13 @@ events.forEach(function(event) {
 
 // Get event name from URL query parameters
 const urlParams = new URLSearchParams(window.location.search);
-const eventName = urlParams.get('name');
+const eventName = urlParams.get('title');
 
 // Function to fetch event details from JSON file and display them
 fetch('events.json')
     .then(response => response.json())
     .then(events => {
-        const event = events.find(event => event.name === eventName);
+        const event = events.find(event => event.title === eventName);
         if (event) {
             displayEventDetails(event);
         } else {
