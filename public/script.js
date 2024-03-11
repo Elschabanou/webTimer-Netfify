@@ -32,7 +32,7 @@ var x = setInterval(function () {
 }, 1000);
 
 // Load events from JSON file
-fetch('events.json')
+fetch('json/events.json')
     .then(response => response.json())
     .then(events => {
         if (events.length > 0) {
