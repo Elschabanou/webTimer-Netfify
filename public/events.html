@@ -5,12 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Details</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header class="sarina-regular">Title</header>
     <h1>Event Details</h1>
     <div id="eventDetails">
         <!-- Event details will be displayed here -->
+    </div>
+    <div class="countdown" style="padding: 100px 0px 100px 0px;">
+        <div class="singelCounter">
+            <div id="weeks" class="countNumer">00</div>
+            <span class="subtitleCounter">Weeks</span>
+        </div>
+        <div class="singelCounter">
+            <div id="days" class="countNumer">00</div>
+            <span class="subtitleCounter">Days</span>
+        </div>
+        <div class="singelCounter">
+            <div id="hours" class="countNumer">00</div>
+            <span class="subtitleCounter">Hours</span>
+        </div>
+        <div class="singelCounter">
+            <div id="minutes" class="countNumer">00</div>
+            <span class="subtitleCounter">Minutes</span>
+        </div>
+        <div id="seconds" class="countNumer">00</div>
+    </div>
+    <div class="back-to-home">
+        <a class="back-home" href="home.html">back to home</a>
+        <img class="back-arrow" src="images/arrow.svg">
+    </div>
+    <div class="additional-info">
+        <h2>Additional Information</h2>
     </div>
     <script src="script.js"></script>
 </body>
