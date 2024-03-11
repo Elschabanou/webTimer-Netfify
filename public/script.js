@@ -89,6 +89,10 @@ fetch('events.json')
 
 // Function to display event details
 function displayEventDetails(event) {
+
+    var headerElement = document.querySelector('.header-title');
+    headerElement.textContent = event.title;
+    
     var eventDetails = document.getElementById('eventDetails');
 
     var eventTitleElement = document.createElement('h2');
