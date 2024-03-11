@@ -8,6 +8,7 @@ fetch('/json/events.json')
         const event = events.find(event => event.title === eventTitle);
         if (event) {
             displayEventDetails(event);
+            countDownDate(event);
         } else {
             document.getElementById('eventDetails').textContent = 'Event not found';
         }
@@ -58,4 +59,3 @@ var x = setInterval(function () {
     }
 }, 1000);}
 
-countDownDate();
