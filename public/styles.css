@@ -224,3 +224,7 @@ button {
     transition: transform 0.3s ease;
     min-width: none;
 }
+
+.eventsList a{
+    text-decoration: none;
+}

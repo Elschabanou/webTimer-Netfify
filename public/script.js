@@ -53,7 +53,7 @@ events.forEach(function(event) {
     eventName.textContent = event.title;
 
     var eventDateTime = document.createElement('div');
-    eventDateTime.id.add("date")
+    eventDateTime.id ="date";
     var dateTime = new Date(event.dateTime);
     eventDateTime.textContent = "Date: " + dateTime.toDateString();
 
