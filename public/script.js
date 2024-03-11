@@ -33,40 +33,50 @@ var x = setInterval(function () {
 
 // Load events from JSON file
 fetch('events.json')
-.then(response => response.json())
-.then(events => {
-    displayEvents(events);
-})
-.catch(error => console.log(error));
+    .then(response => response.json())
+    .then(events => {
+        if (events.length > 0) {
+            displayEvents(events);
+        } else {
+            displayNoEventsMessages();
+        }
+    }
+    )
+    .catch(error => console.log(error));
 
 // Function to display events
 function displayEvents(events) {
-var eventsList = document.getElementById('eventsList');
+    var eventsList = document.getElementById('eventsList');
 
-// Loop through the events array and create HTML elements for each event
-events.forEach(function(event) {
-    var eventElement = document.createElement('div');
-    eventElement.classList.add('event-card');
+    // Loop through the events array and create HTML elements for each event
+    events.forEach(function (event) {
+        var eventElement = document.createElement('div');
+        eventElement.classList.add('event-card');
 
-    var eventName = document.createElement('div');
-    eventName.classList.add("title");
-    eventName.textContent = event.title;
+        var eventName = document.createElement('div');
+        eventName.classList.add("title");
+        eventName.textContent = event.title;
 
-    var eventDateTime = document.createElement('div');
-    eventDateTime.id ="date";
-    var dateTime = new Date(event.dateTime);
-    eventDateTime.textContent = "Date: " + dateTime.toDateString();
+        var eventDateTime = document.createElement('div');
+        eventDateTime.id = "date";
+        var dateTime = new Date(event.dateTime);
+        eventDateTime.textContent = "Date: " + dateTime.toDateString();
 
-    // Add event link to the event name
-    var eventLink = document.createElement('a');
-    eventLink.href = 'events.html?title=' + encodeURIComponent(event.title);
-    eventLink.appendChild(eventName);
+        // Add event link to the event name
+        var eventLink = document.createElement('a');
+        eventLink.href = 'events.html?title=' + encodeURIComponent(event.title);
+        eventLink.appendChild(eventName);
 
-    eventElement.appendChild(eventLink);
-    eventElement.appendChild(eventDateTime);
+        eventElement.appendChild(eventLink);
+        eventElement.appendChild(eventDateTime);
 
-    eventsList.appendChild(eventElement);
-});
+        eventsList.appendChild(eventElement);
+    });
+}
+
+function displayNoEventsMessages(){
+    var eventsList = document.getElementById('eventsList');
+    eventsList.textContent = "No events found";
 }
 
 // Get event title from URL query parameters
