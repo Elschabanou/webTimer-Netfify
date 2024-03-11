@@ -57,7 +57,7 @@ events.forEach(function(event) {
 
     // Add event link to the event name
     var eventLink = document.createElement('a');
-    eventLink.href = 'events.html?name=' + encodeURIComponent(event.name);
+    eventLink.href = 'events.html?name=' + encodeURIComponent(event.title);
     eventLink.appendChild(eventName);
 
     eventElement.appendChild(eventLink);
