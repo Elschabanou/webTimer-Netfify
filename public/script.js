@@ -84,7 +84,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const eventTitle = urlParams.get('title');
 
 // Function to fetch event details from JSON file and display them
-fetch('events.json')
+fetch('json/events.json')
     .then(response => response.json())
     .then(events => {
         const event = events.find(event => event.title === eventTitle);
