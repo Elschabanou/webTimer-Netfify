@@ -236,8 +236,13 @@ footer{
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    gap: 60px;
+}
+
+footer a{
     text-decoration: none;
     color: var(--white-color);
+    background-color: var(--background-color);
 }
 
 footer a:hover{
