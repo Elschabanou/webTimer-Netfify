@@ -16,7 +16,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
                 window.location.href = '/home.html';
             } else {
                 // Display error message if credentials are incorrect
-                document.getElementById('errorMessage').textContent = 'Invalid username or password.';
+                document.getElementById('errorMessage').style.display = "visible";
             }
         })
         .catch(error => console.log(error));

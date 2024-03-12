@@ -294,7 +294,7 @@ footer a:hover {
     background-color: #889d46;
 }
 
-.login-form {
+#login-form {
     border-radius: var(--radius);
     border: 1px solid var(--background-color);
     background: var(--main-color);
