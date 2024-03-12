@@ -14,6 +14,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
             if (user) {
                 // Redirect to home.html if credentials are correct
                 window.location.href = '/home.html';
+                document.getElementById('errorMessage').style.visibility = "hidden";
 
             } else {
                 // Display error message if credentials are incorrect
