@@ -309,7 +309,5 @@ input {
 }
 
 form {
-    display: felx;
-    flex-direction: column;
-    gap: 16px;
+    padding: 40px 60px;
 }
