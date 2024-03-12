@@ -265,15 +265,15 @@ footer a:hover {
 
  /* Custom scrollbar for WebKit browsers (Chrome, Safari) */
  ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 5px;
+    background-color: var(--background-color);
+    border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: var(--background-color);
 }
