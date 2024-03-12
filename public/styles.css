@@ -305,4 +305,11 @@ input {
 .black-box {
     width: 100%;
     height: 50px;
+    background: var(--background-color);
+}
+
+form {
+    display: felx;
+    flex-direction: column;
+    gap: 16px;
 }
