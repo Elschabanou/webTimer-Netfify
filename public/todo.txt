@@ -1,0 +1,12 @@
+//Todo's
+
+- Login/Back button verfeinern / Responsive
+- Login Page gestalten
+- Userdata anlegen (Account für Pia und mich)
+- Login funktionalität
+- neue Events erstellen/löschen (in events.json schreiben)
+- neues Event erstellen Seite gestalten
+- Main page Timer einstellung änderbar machen
+- Main page Farbprofile einstellen
+- weiter Images erstellen
+
