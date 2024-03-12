@@ -14,10 +14,10 @@ document.getElementById('login-form').addEventListener('submit', function (event
             if (user) {
                 // Redirect to home.html if credentials are correct
                 window.location.href = '/home.html';
-                
+
             } else {
                 // Display error message if credentials are incorrect
-                document.getElementById('errorMessage').style.display = "visible";
+                document.getElementById('errorMessage').style.visibility = "visible";
             }
         })
         .catch(error => console.log(error));
