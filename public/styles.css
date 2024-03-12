@@ -200,6 +200,14 @@ h2 {
         flex-grow: 1;
 
     }
+
+    .top-Content{
+        justify-content: center;
+    }
+
+    form{
+        padding: 40px 40px;
+    }
 }
 
 button {
@@ -298,7 +306,7 @@ input {
     border-radius: 2px;
     border: 1px solid var(--background-color);
     background: #FFF;
-    color: #000;
+    color: var(--background-color);
     font-family: "Inria Serif";
     font-size: 1.5rem;
 }
@@ -313,6 +321,6 @@ form {
     padding: 40px 60px;
 }
 
-.form-group{
+.form-group {
     padding-bottom: 10px;
 }
