@@ -311,3 +311,7 @@ input {
 form {
     padding: 40px 60px;
 }
+
+.form-group{
+    padding-bottom: 10px;
+}
