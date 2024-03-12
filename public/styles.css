@@ -226,6 +226,7 @@ footer a:hover {
     position: absolute;
     top: 5%;
     left: 5%;
+    stroke: var(--background-color);
 }
 
 #back-btn:hover{
