@@ -2,6 +2,7 @@
 
 - Login/Back size Responsive
 - Login Page gestalten
+- custom Scrollbar
 - Userdata anlegen (Account für Pia und mich)
 - Login funktionalität
 - neue Events erstellen/löschen (in events.json schreiben)
