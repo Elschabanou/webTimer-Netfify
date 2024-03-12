@@ -1,4 +1,4 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
+document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
     // Get user input
@@ -14,6 +14,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
             if (user) {
                 // Redirect to home.html if credentials are correct
                 window.location.href = '/home.html';
+                
             } else {
                 // Display error message if credentials are incorrect
                 document.getElementById('errorMessage').style.display = "visible";
