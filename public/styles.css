@@ -203,7 +203,11 @@ h2 {
 }
 
 button {
-    background-color: white;
+    border-radius: var(--radius);
+    background: var(--background-color);
+    color: var(--white-color);
+    font-family: "Inria Serif";
+    font-size: 1.5rem;
 }
 
 .event-card {
@@ -283,8 +287,10 @@ footer a:hover {
 }
 
 .login-form {
-    background: white;
     border-radius: var(--radius);
+    border: 1px solid var(--background-color);
+    background: var(--main-color);
+    box-shadow: 14px 17px 16.4px 0px rgba(0, 0, 0, 0.25);
 }
 
 input {
@@ -293,5 +299,10 @@ input {
     background: #FFF;
     color: #000;
     font-family: "Inria Serif";
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.black-box {
+    width: 100%;
+    height: 50px;
 }
