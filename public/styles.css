@@ -194,10 +194,10 @@ h2 {
         gap: 15px;
     }
 
-    .event-card a{
-    padding-left: none;
-    text-align: center;
-    flex-grow: 1;
+    .event-card a {
+        padding-left: none;
+        text-align: center;
+        flex-grow: 1;
 
     }
 }
@@ -265,22 +265,30 @@ footer a:hover {
     transition: transform 0.4s ease-in-out;
 }
 
- /* Custom scrollbar for WebKit browsers (Chrome, Safari) */
- ::-webkit-scrollbar {
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
     width: 8px;
 }
+
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #B2CF5A;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #889d46;
 }
 
-.login-form{
+.login-form {
     background: white;
     border-radius: var(--radius);
-    
+}
+
+input {
+    border-radius: 2px;
+    border: 1px solid #000;
+    background: #FFF;
 }
