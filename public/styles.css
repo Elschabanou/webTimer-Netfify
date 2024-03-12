@@ -52,7 +52,7 @@ h1 {
     flex: 1 0 0;
 }
 
-header a {
+#login-butn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
