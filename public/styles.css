@@ -42,6 +42,11 @@ body {
 
 }
 
+h1{
+    margin: 0;
+    font-size: 1em;
+}
+
 img {
     width: 450px;
     height: auto;
@@ -223,9 +228,6 @@ footer a:hover {
 }
 
 #back-btn{
-    position: absolute;
-    top: 5vh;
-    left: 5%;
     stroke: var(--background-color);
 }
 
@@ -234,11 +236,6 @@ footer a:hover {
     transition: transform 0.4s ease-in-out;
 }
 
-#login-btn{
-    position:absolute;
-    top: 5vh;
-    right: 5%;
-}
 
 #login-btn:hover{
     transform: scale(1.1);
