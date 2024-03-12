@@ -7,6 +7,8 @@
     --main-color: #F4FFCA;
     /* Main color */
     --white-color: #edf8ee;
+
+    --radius: 2px;
 }
 
 body {
@@ -275,4 +277,10 @@ footer a:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #889d46;
+}
+
+.login-form{
+    background: white;
+    border-radius: var(--radius);
+    
 }
