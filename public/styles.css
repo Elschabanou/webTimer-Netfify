@@ -191,6 +191,13 @@ h2 {
     .countdown {
         gap: 15px;
     }
+
+    .event-card a{
+    padding-left: none;
+    text-align: center;
+    flex-grow: 1;
+
+    }
 }
 
 button {
