@@ -6,7 +6,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     var password = document.getElementById('password').value;
 
     // Fetch JSON data (replace this with actual fetch request)
-    fetch('user_data.json')
+    fetch('/json/userdata.json')
         .then(response => response.json())
         .then(data => {
             // Check if user credentials match
