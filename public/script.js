@@ -116,6 +116,8 @@ window.addEventListener('beforeunload', function() {
     sessionStorage.removeItem('isLoggedIn');
 });
 
+const fs = require('fs');
+
 document.getElementById("save-event").addEventListener("click", function () {
     // Get input values
     var eventName = document.querySelector("#popup input[type='text']").value;
@@ -129,31 +131,30 @@ document.getElementById("save-event").addEventListener("click", function () {
         "dateTime": eventDateTime
     };
 
-    // Fetch existing events from events.json
-    fetch('/json/events.json')
-        .then(response => response.json())
-        .then(events => {
-            // Append new event to events array
-            events.push(newEvent);
+    // Read existing events from events.json
+    fs.readFile('/json/events.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            return;
+        }
 
-            // Save updated events array to events.json
-            fetch('/json/events.json', {
-                method: 'POST', // Assuming you have backend support for updating the file
-                body: JSON.stringify(events),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    console.log("Event saved successfully");
-                    // Close the popup
-                    document.getElementById("popup").style.display = "none";
-                } else {
-                    console.error("Failed to save event");
-                }
-            })
-            .catch(error => console.error("Error saving event:", error));
-        })
-        .catch(error => console.error("Error fetching events:", error));
+        // Parse JSON data
+        const events = JSON.parse(data);
+
+        // Append new event to events array
+        events.push(newEvent);
+
+        // Write updated events array back to events.json
+        fs.writeFile('/json/events.json', JSON.stringify(events, null, 2), (err) => {
+            if (err) {
+                console.error('Error writing file:', err);
+                return;
+            }
+            console.log('Event saved successfully');
+
+            // Close the popup
+            document.getElementById("popup").style.display = "none";
+        });
+    });
 });
+
