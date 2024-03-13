@@ -15,18 +15,6 @@ document.getElementById('login-form').addEventListener('submit', function (event
                 // Redirect to home.html if credentials are correct
                 window.location.href = '/home.html';
                 document.getElementById('errorMessage').style.visibility = "hidden";
-                //test
-                document.getElementById("add-Event").addEventListener("click", function() {
-                    document.getElementById("popup").style.display = "block";
-                  });
-                  
-                  document.getElementById("save-event").addEventListener("click", function() {
-                    // Add your save event logic here
-                    console.log("Event saved");
-                    // Close the popup
-                    document.getElementById("popup").style.display = "none";
-                  });
-
             } else {
                 // Display error message if credentials are incorrect
                 document.getElementById('errorMessage').style.visibility = "visible";
@@ -34,3 +22,15 @@ document.getElementById('login-form').addEventListener('submit', function (event
         })
         .catch(error => console.log(error));
 });
+
+//test
+document.getElementById("add-Event").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "block";
+  });
+  
+  document.getElementById("save-event").addEventListener("click", function() {
+    // Add your save event logic here
+    console.log("Event saved");
+    // Close the popup
+    document.getElementById("popup").style.display = "none";
+  });
