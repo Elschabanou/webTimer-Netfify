@@ -124,7 +124,7 @@ document.getElementById("save-event").addEventListener("click", function () {
         description: document.querySelector("#popup textarea").value
     };
 
-    fetch('/functions/writeNewEvent', {
+    fetch('public/netlify/functions/writeNewEvent', {
         method: 'POST',
         body: JSON.stringify(eventData),
         headers: {
