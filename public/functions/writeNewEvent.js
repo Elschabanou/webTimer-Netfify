@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 exports.handler = async (event) => {
+  console.log('Event body:', event.body); // Log the event body
+
   const eventData = JSON.parse(event.body);
 
   try {
