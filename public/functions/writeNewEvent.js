@@ -7,14 +7,14 @@ exports.handler = async (event) => {
 
   try {
     // Read existing events from file
-    const existingData = fs.readFileSync('./json/events.json', 'utf8');
+    const existingData = fs.readFileSync('/json/events.json', 'utf8');
     const events = JSON.parse(existingData);
 
     // Append new event
     events.push(eventData);
 
     // Write updated data back to file
-    fs.writeFileSync('./json/events.json', JSON.stringify(events, null, 2));
+    fs.writeFileSync('/json/events.json', JSON.stringify(events, null, 2));
 
     return {
       statusCode: 200,
