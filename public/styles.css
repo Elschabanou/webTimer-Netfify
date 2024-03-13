@@ -335,9 +335,9 @@ form {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -346,21 +346,17 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  input[type="text"],
-  input[type="date"],
-  textarea {
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  #add-Event{
-    display: none;
-  }
+}
