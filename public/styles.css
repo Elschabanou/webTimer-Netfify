@@ -361,3 +361,6 @@ form {
     cursor: pointer;
   }
   
+  #add-Event{
+    display: none;
+  }
