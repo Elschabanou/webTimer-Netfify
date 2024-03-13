@@ -111,7 +111,7 @@ if (isLoggedIn === 'true') {
     document.getElementById('add-Event').style.display = 'block';
 }
 
-window.addEventListener('beforeunload', function() {
+window.addEventListener('beforeunload', function () {
     // Remove the isLoggedIn flag from sessionStorage
     sessionStorage.removeItem('isLoggedIn');
 });
@@ -124,20 +124,20 @@ document.getElementById("save-event").addEventListener("click", function () {
         description: document.querySelector("#popup textarea").value
     };
 
-    fetch('public/netlify/functions/writeEvent', {
+    fetch('public/functions/writeEvent', {
         method: 'POST',
         body: JSON.stringify(eventData),
         headers: {
             'Content-Type': 'application/json'
         }
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data.message); // Log success message
-        // Close the popup
-        document.getElementById("popup").style.display = "none";
-    })
-    .catch(error => console.error("Error saving event:", error));
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.message); // Log success message
+            // Close the popup
+            document.getElementById("popup").style.display = "none";
+        })
+        .catch(error => console.error("Error saving event:", error));
 });
 
 
