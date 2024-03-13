@@ -118,43 +118,28 @@ window.addEventListener('beforeunload', function() {
 
 const fs = require('fs');
 
+// Client-side JavaScript code
 document.getElementById("save-event").addEventListener("click", function () {
-    // Get input values
-    var eventName = document.querySelector("#popup input[type='text']").value;
-    var eventDateTime = document.querySelector("#popup input[type='datetime-local']").value;
-    var eventDescription = document.querySelector("#popup textarea").value;
-
-    // Create new event object
-    var newEvent = {
-        "title": eventName,
-        "description": eventDescription,
-        "dateTime": eventDateTime
+    var eventData = {
+        title: document.querySelector("#popup input[type='text']").value,
+        dateTime: document.querySelector("#popup input[type='datetime-local']").value,
+        description: document.querySelector("#popup textarea").value
     };
 
-    // Read existing events from events.json
-    fs.readFile('/json/events.json', 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading file:', err);
-            return;
+    fetch('/.netlify/functions/writeEvent', {
+        method: 'POST',
+        body: JSON.stringify(eventData),
+        headers: {
+            'Content-Type': 'application/json'
         }
-
-        // Parse JSON data
-        const events = JSON.parse(data);
-
-        // Append new event to events array
-        events.push(newEvent);
-
-        // Write updated events array back to events.json
-        fs.writeFile('/json/events.json', JSON.stringify(events, null, 2), (err) => {
-            if (err) {
-                console.error('Error writing file:', err);
-                return;
-            }
-            console.log('Event saved successfully');
-
-            // Close the popup
-            document.getElementById("popup").style.display = "none";
-        });
-    });
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message); // Log success message
+        // Close the popup
+        document.getElementById("popup").style.display = "none";
+    })
+    .catch(error => console.error("Error saving event:", error));
 });
+
 
