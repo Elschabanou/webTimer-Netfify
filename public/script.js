@@ -107,6 +107,6 @@ document.addEventListener("click", function (event) {
 var isLoggedIn = sessionStorage.getItem('isLoggedIn');
 if (isLoggedIn === 'true') {
     // If logged in, show the button
-    document.getElementById('showButton').style.display = 'block';
+    document.getElementById('add-Event').style.display = 'block';
 }
 
