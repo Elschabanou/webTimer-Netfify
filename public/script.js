@@ -92,17 +92,21 @@ document.getElementById("save-event").addEventListener("click", function () {
     document.getElementById("popup").style.display = "none";
 });
 
-// Close the popup if clicked outside
-document.addEventListener("click", function (event) {
-    var popup = document.getElementById("popup");
-    var addEventButton = document.getElementById("add-Event");
-    var isClickInsidePopup = popup.contains(event.target);
-    var isClickOnAddEventButton = addEventButton.contains(event.target);
+document.addEventListener("DOMContentLoaded", function () {
+    // Close the popup if clicked outside
+    document.addEventListener("click", function (event) {
+        var popup = document.getElementById("popup");
+        var addEventButton = document.getElementById("add-Event");
+        var isClickInsidePopup = popup.contains(event.target);
+        var isClickOnAddEventButton = addEventButton.contains(event.target);
 
-    if (!isClickInsidePopup && !isClickOnAddEventButton) {
-        popup.style.display = "none";
-    }
+        if (!isClickInsidePopup && !isClickOnAddEventButton) {
+            popup.style.display = "none";
+        }
+    });
 });
+
+
 
 var isLoggedIn = sessionStorage.getItem('isLoggedIn');
 if (isLoggedIn === 'true') {
