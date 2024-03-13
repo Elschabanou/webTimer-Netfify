@@ -1,6 +1,5 @@
 var countDownDate = new Date("Jul 05, 2024 12:30:00").getTime();
 
-
 // Update the countdown every 1 second
 var x = setInterval(function () {
 
@@ -106,11 +105,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
 var isLoggedIn = sessionStorage.getItem('isLoggedIn');
 if (isLoggedIn === 'true') {
     // If logged in, show the button
     document.getElementById('add-Event').style.display = 'block';
 }
 
+window.addEventListener('beforeunload', function() {
+    // Remove the isLoggedIn flag from sessionStorage
+    sessionStorage.removeItem('isLoggedIn');
+});
+
+document.getElementById("save-event").addEventListener("click", function () {
+    // Get input values
+    var eventName = document.querySelector("#popup input[type='text']").value;
+    var eventDateTime = document.querySelector("#popup input[type='datetime-local']").value;
+    var eventDescription = document.querySelector("#popup textarea").value;
+
+    // Create new event object
+    var newEvent = {
+        "title": eventName,
+        "description": eventDescription,
+        "dateTime": eventDateTime
+    };
+
+    // Fetch existing events from events.json
+    fetch('/json/events.json')
+        .then(response => response.json())
+        .then(events => {
+            // Append new event to events array
+            events.push(newEvent);
+
+            // Save updated events array to events.json
+            fetch('/json/events.json', {
+                method: 'PUT', // Assuming you have backend support for updating the file
+                body: JSON.stringify(events),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log("Event saved successfully");
+                    // Close the popup
+                    document.getElementById("popup").style.display = "none";
+                } else {
+                    console.error("Failed to save event");
+                }
+            })
+            .catch(error => console.error("Error saving event:", error));
+        })
+        .catch(error => console.error("Error fetching events:", error));
+});
