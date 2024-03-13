@@ -12,10 +12,11 @@ document.getElementById('login-form').addEventListener('submit', function (event
             // Check if user credentials match
             var user = data.find(user => user.user === username && user.password === password);
             if (user) {
+                // Set flag indicating successful login in sessionStorage
+                sessionStorage.setItem('isLoggedIn', 'true');
                 // Redirect to home.html if credentials are correct
                 window.location.href = '/home.html';
                 document.getElementById('errorMessage').style.visibility = "hidden";
-                document.getElementById('add-Event').style.display = "block";
             } else {
                 // Display error message if credentials are incorrect
                 document.getElementById('errorMessage').style.visibility = "visible";

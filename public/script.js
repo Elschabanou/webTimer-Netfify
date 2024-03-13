@@ -80,7 +80,7 @@ function displayNoEventsMessages() {
     eventsList.textContent = "No events found";
 }
 
-//popup test
+// Popup test
 document.getElementById("add-Event").addEventListener("click", function () {
     document.getElementById("popup").style.display = "block";
 });
@@ -91,3 +91,22 @@ document.getElementById("save-event").addEventListener("click", function () {
     // Close the popup
     document.getElementById("popup").style.display = "none";
 });
+
+// Close the popup if clicked outside
+document.addEventListener("click", function (event) {
+    var popup = document.getElementById("popup");
+    var addEventButton = document.getElementById("add-Event");
+    var isClickInsidePopup = popup.contains(event.target);
+    var isClickOnAddEventButton = addEventButton.contains(event.target);
+
+    if (!isClickInsidePopup && !isClickOnAddEventButton) {
+        popup.style.display = "none";
+    }
+});
+
+var isLoggedIn = sessionStorage.getItem('isLoggedIn');
+if (isLoggedIn === 'true') {
+    // If logged in, show the button
+    document.getElementById('showButton').style.display = 'block';
+}
+
