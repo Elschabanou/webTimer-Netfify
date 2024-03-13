@@ -116,8 +116,6 @@ window.addEventListener('beforeunload', function() {
     sessionStorage.removeItem('isLoggedIn');
 });
 
-const fs = require('fs');
-
 // Client-side JavaScript code
 document.getElementById("save-event").addEventListener("click", function () {
     var eventData = {
