@@ -138,7 +138,7 @@ document.getElementById("save-event").addEventListener("click", function () {
 
             // Save updated events array to events.json
             fetch('/json/events.json', {
-                method: 'PUT', // Assuming you have backend support for updating the file
+                method: 'POST', // Assuming you have backend support for updating the file
                 body: JSON.stringify(events),
                 headers: {
                     'Content-Type': 'application/json'
