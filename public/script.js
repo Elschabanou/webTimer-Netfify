@@ -58,7 +58,7 @@ function displayEvents(events) {
         eventName.textContent = event.title;
 
         var eventDateTime = document.createElement('div');
-        eventDateTime.id = "date";
+        eventDateTime.classList.add("date");
         var dateTime = new Date(event.dateTime);
         eventDateTime.textContent = dateTime.toDateString();
 
@@ -151,7 +151,7 @@ radioButtons.forEach(button => {
                 case 'option1':
                     document.body.style.backgroundColor = "#F4FFCA";
                     document.getElementById("seconds").style.color = '#F4FFCA';
-                    document.getElementById("date").style.backgroundColor = '#F4FFCA';
+                    document.getElementsByClassName("date").style.backgroundColor = '#F4FFCA';
                     break;
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
@@ -162,6 +162,7 @@ radioButtons.forEach(button => {
                     document.body.style.backgroundColor = '#E4CAFF';
                     document.getElementById("seconds").style.color = '#E4CAFF';
                     document.getElementById("date").style.backgroundColor = '#E4CAFF';
+                    document.getElementById
                     break;
                 case 'option4':
                     document.body.style.backgroundColor = '#FFC46C';
