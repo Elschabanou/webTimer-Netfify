@@ -149,16 +149,16 @@ radioButtons.forEach(button => {
         if (this.checked) {
             switch (this.value) {
                 case 'option1':
-                    body.style.backgroundColor = "#F4FFCA";
+                    document.body.style.backgroundColor = "#F4FFCA";
                     break;
                 case 'option2':
-                    body.style.backgroundColor = '#CAEFFF';
+                    document.body.style.backgroundColor = '#CAEFFF';
                     break;
                 case 'option3':
-                    body.style.backgroundColor = '#E4CAFF';
+                    document.body.style.backgroundColor = '#E4CAFF';
                     break;
                 default:
-                    body.style.backgroundColor = '#FFC46C';
+                    document.body.style.backgroundColor = '#FFC46C';
             }
         }
     });
