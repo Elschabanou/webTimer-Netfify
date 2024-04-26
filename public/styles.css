@@ -189,7 +189,7 @@ h2 {
         margin-top: 10%;
     }
 
-    #date {
+    .date {
         padding: 0 !important;
         margin-top: 10px;
         flex-grow: 1;
