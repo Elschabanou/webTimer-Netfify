@@ -81,7 +81,7 @@ function displayNoEventsMessages() {
 
 // Popup test
 document.getElementById("add-Event").addEventListener("click", function () {
-    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.display = "none";
 });
 
 document.getElementById("save-event").addEventListener("click", function () {

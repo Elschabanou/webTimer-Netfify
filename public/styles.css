@@ -360,3 +360,29 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+.color_changer {
+    display: flex;
+    flex-direction: row;
+}
+
+.color_changer button {
+    stroke-width: 1.782px;
+    stroke: var(--background-color);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#pink{
+    background-color: pink;
+}
+#orange{
+    background-color:orange
+}
