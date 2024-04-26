@@ -156,6 +156,7 @@ radioButtons.forEach(button => {
                     if (currentClass) {
                         currentClass.style.border = '1px solid #F4FFCA';
                     }
+                    document.querySelector(".date").style.backgroundColor = "#F4FFCA";
                     break;
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
@@ -164,16 +165,17 @@ radioButtons.forEach(button => {
                     if (currentClass1) {
                         currentClass1.style.border = '1px solid #CAEFFF';
                     }
+                    document.querySelector(".date").style.backgroundColor = "#CAEFFF";
                     break;
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
                     document.getElementById("seconds").style.color = '#E4CAFF';
-
+                    document.querySelector(".date").style.backgroundColor = "#E4CAFF";
                     break;
                 case 'option4':
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-
+                    document.querySelector(".date").style.backgroundColor = "#FFC46C";
                     break;
                 default:
                     document.body.style.backgroundColor = '#FFC46C';
