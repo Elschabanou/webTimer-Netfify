@@ -156,7 +156,7 @@ h2 {
     padding-bottom: 40px;
 }
 
-#date {
+.date {
     background-color: var(--main-color);
     color: var(--background-color) !important;
     padding: 10px 30px 10px 0;
@@ -193,7 +193,6 @@ h2 {
         padding: 0 !important;
         margin-top: 10px;
         flex-grow: 1;
-
     }
 
     .countdown {
@@ -365,7 +364,7 @@ textarea {
 
 button {
     padding: 10px 20px;
-    display:none;
+    display: none;
     cursor: pointer;
 }
 
