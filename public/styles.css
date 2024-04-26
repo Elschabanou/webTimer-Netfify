@@ -377,17 +377,20 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-#green{
+#green {
     background-color: green;
 }
-#blue{
+
+#blue {
     background-color: blue;
 }
-#pink{
+
+#pink {
     background-color: pink;
 }
-#orange{
-    background-color:orange
+
+#orange {
+    background-color: orange
 }
 
 /* Define the dot inside the custom radio button */
@@ -407,6 +410,15 @@ input[type="radio"] {
 }
 
 /* Show the dot when the radio button is checked */
-input[type="radio"]:checked + .custom-radio::after {
+input[type="radio"]:checked+.custom-radio::after {
     opacity: 1;
+}
+
+.color_changer {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
 }
