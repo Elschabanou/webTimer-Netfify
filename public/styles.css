@@ -7,6 +7,12 @@
     --main-color: #F4FFCA;
     /* Main color */
     --white-color: #edf8ee;
+    /* color variation 1 - blue*/
+    --variation-blue: #CAEFFF;
+    /* color variation 2 - pink*/
+    --variation-pink: #E4CAFF;
+    /* color variation 3 - orange*/
+    --variation-orange: #FFC46C;
 
     --radius: 2px;
 }
@@ -378,19 +384,19 @@ input[type="radio"] {
 }
 
 #green {
-    background-color: green;
+    background-color: var(--main-color);
 }
 
 #blue {
-    background-color: blue;
+    background-color: var(--variation-blue);
 }
 
 #pink {
-    background-color: pink;
+    background-color: var(--variation-pink);
 }
 
 #orange {
-    background-color: orange
+    background-color: var(--variation-orange);
 }
 
 /* Define the dot inside the custom radio button */
