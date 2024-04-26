@@ -157,6 +157,9 @@ radioButtons.forEach(button => {
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
                     break;
+                case 'option4':
+                    document.body.style.backgroundColor = '#E4CAFF';
+                    break;
                 default:
                     document.body.style.backgroundColor = '#FFC46C';
             }
