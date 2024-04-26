@@ -155,8 +155,9 @@ radioButtons.forEach(button => {
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
                     document.getElementById("date").style.backgroundColor = '#CAEFFF';
-                    document.eventcard.style.color = '#CAEFFF';
-                    document.eventcard.style.border = '#CAEFFF';
+                    document.getElementsByClassName("event-card").style.color = '#CAEFFF';
+                    document.getElementsByClassName("event-card").style.border = '#CAEFFF';
+
                     break;
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
