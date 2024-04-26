@@ -361,17 +361,20 @@ button {
     cursor: pointer;
 }
 
-.color_changer {
-    display: flex;
-    flex-direction: row;
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
 }
 
-.color_changer button {
-    stroke-width: 1.782px;
-    stroke: var(--background-color);
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
+/* Define the custom radio button style */
+.custom-radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
 }
 
 #green{
@@ -385,4 +388,25 @@ button {
 }
 #orange{
     background-color:orange
+}
+
+/* Define the dot inside the custom radio button */
+.custom-radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Show the dot when the radio button is checked */
+input[type="radio"]:checked + .custom-radio::after {
+    opacity: 1;
 }
