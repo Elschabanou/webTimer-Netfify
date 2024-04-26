@@ -150,23 +150,28 @@ radioButtons.forEach(button => {
             switch (this.value) {
                 case 'option1':
                     document.body.style.backgroundColor = "#F4FFCA";
+                    document.getElementById("seconds").style.color = '#F4FFCA';
+                    document.getElementById("date").style.backgroundColor = '#F4FFCA';
                     break;
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
                     document.getElementById("date").style.backgroundColor = '#CAEFFF';
-                    document.getElementsByClassName("event-card").style.color = '#CAEFFF';
-                    document.getElementsByClassName("event-card").style.border = '#CAEFFF';
-
                     break;
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
+                    document.getElementById("seconds").style.color = '#E4CAFF';
+                    document.getElementById("date").style.backgroundColor = '#E4CAFF';
                     break;
                 case 'option4':
                     document.body.style.backgroundColor = '#FFC46C';
+                    document.getElementById("seconds").style.color = '#FFC46C';
+                    document.getElementById("date").style.backgroundColor = '#FFC46C';
                     break;
                 default:
                     document.body.style.backgroundColor = '#FFC46C';
+                    document.getElementById("seconds").style.color = '#FFC46C';
+                    document.getElementById("date").style.backgroundColor = '#FFC46C';
             }
         }
     });
