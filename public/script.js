@@ -162,7 +162,7 @@ radioButtons.forEach(button => {
                     document.getElementById("seconds").style.color = '#CAEFFF';
                     let currentClass1 = document.querySelector('.event-card');
                     if (currentClass1) {
-                        currentClass.style.border = '1px solid #CAEFFF';
+                        currentClass1.style.border = '1px solid #CAEFFF';
                     }
                     break;
                 case 'option3':
