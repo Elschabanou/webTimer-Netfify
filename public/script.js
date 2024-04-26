@@ -161,10 +161,13 @@ radioButtons.forEach(button => {
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
-                    let currentClass1 = document.querySelector('.event-card');
-                    if (currentClass1) {
-                        currentClass1.style.border = '1px solid #CAEFFF';
-                    }
+
+                    const elements = document.querySelectorAll('.event-card');
+
+                    // Iterate over each element and change its color
+                    elements.forEach(element => {
+                        element.style.color = '#CAEFFF'; // Change the color to red
+                    });
                     document.querySelector(".date").style.backgroundColor = "#CAEFFF";
                     break;
                 case 'option3':
