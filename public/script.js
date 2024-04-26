@@ -151,12 +151,16 @@ radioButtons.forEach(button => {
                 case 'option1':
                     document.body.style.backgroundColor = "#F4FFCA";
                     document.getElementById("seconds").style.color = '#F4FFCA';
-                    document.getElementsByClassName("date").style.backgroundColor = '#F4FFCA';
+                    const elements = document.querySelectorAll('.date');
+
+                    elements.forEach(element => {
+                        element.style.color = 'F4FFCA'; // Change the color to red
+                    });
                     break;
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
-                    document.getElementByClassName("date").style.backgroundColor = '#CAEFFF';
+                    document.getElementByClassName(".date").style.backgroundColor = '#CAEFFF';
                     break;
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
@@ -166,12 +170,12 @@ radioButtons.forEach(button => {
                 case 'option4':
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-                    document.getElementsByClassName("date").style.backgroundColor = '#FFC46C';
+                    document.getElementsByClassName(".date").style.backgroundColor = '#FFC46C';
                     break;
                 default:
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-                    document.getElementsByClassName("date").style.backgroundColor = '#FFC46C';
+                    document.getElementsByClassName(".date").style.backgroundColor = '#FFC46C';
             }
         }
     });
