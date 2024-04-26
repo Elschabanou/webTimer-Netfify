@@ -140,4 +140,27 @@ document.getElementById("save-event").addEventListener("click", function () {
         .catch(error => console.error("Error saving event:", error));
 });
 
+// JavaScript to change background color based on selected radio button
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+const body = document.getElementById('body');
+
+radioButtons.forEach(button => {
+    button.addEventListener('change', function () {
+        if (this.checked) {
+            switch (this.value) {
+                case 'option1':
+                    body.style.backgroundColor = "#F4FFCA";
+                    break;
+                case 'option2':
+                    body.style.backgroundColor = '#CAEFFF';
+                    break;
+                case 'option3':
+                    body.style.backgroundColor = '#E4CAFF';
+                    break;
+                default:
+                    body.style.backgroundColor = '#FFC46C';
+            }
+        }
+    });
+});
 
