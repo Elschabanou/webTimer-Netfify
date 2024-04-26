@@ -156,23 +156,22 @@ radioButtons.forEach(button => {
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
-                    document.getElementById("date").style.backgroundColor = '#CAEFFF';
+                    document.getElementByClassName("date").style.backgroundColor = '#CAEFFF';
                     break;
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
                     document.getElementById("seconds").style.color = '#E4CAFF';
-                    document.getElementById("date").style.backgroundColor = '#E4CAFF';
-                    document.getElementById
+                    document.getElementsByClassName("date").style.backgroundColor = '#E4CAFF';
                     break;
                 case 'option4':
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-                    document.getElementById("date").style.backgroundColor = '#FFC46C';
+                    document.getElementsByClassName("date").style.backgroundColor = '#FFC46C';
                     break;
                 default:
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-                    document.getElementById("date").style.backgroundColor = '#FFC46C';
+                    document.getElementsByClassName("date").style.backgroundColor = '#FFC46C';
             }
         }
     });
