@@ -151,31 +151,34 @@ radioButtons.forEach(button => {
                 case 'option1':
                     document.body.style.backgroundColor = "#F4FFCA";
                     document.getElementById("seconds").style.color = '#F4FFCA';
-                    const elements = document.querySelectorAll('.date');
-
-                    elements.forEach(element => {
-                        element.style.color = 'F4FFCA'; // Change the color to red
-                    });
+                    //date, border of event-card, slider, a in event-card
+                    let currentClass = document.querySelector('.event-card');
+                    if (currentClass) {
+                        currentClass.style.border = '1px solid #F4FFCA';
+                    }
                     break;
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
-                    document.getElementByClassName(".date").style.backgroundColor = '#CAEFFF';
+                    let currentClass1 = document.querySelector('.event-card');
+                    if (currentClass1) {
+                        currentClass.style.border = '1px solid #CAEFFF';
+                    }
                     break;
                 case 'option3':
                     document.body.style.backgroundColor = '#E4CAFF';
                     document.getElementById("seconds").style.color = '#E4CAFF';
-                    document.getElementsByClassName("date").style.backgroundColor = '#E4CAFF';
+
                     break;
                 case 'option4':
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-                    document.getElementsByClassName(".date").style.backgroundColor = '#FFC46C';
+
                     break;
                 default:
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
-                    document.getElementsByClassName(".date").style.backgroundColor = '#FFC46C';
+
             }
         }
     });
