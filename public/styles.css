@@ -464,10 +464,7 @@ input[type="radio"]:checked+.custom-radio::after {
     backdrop-filter: blur(5px); /* Apply blur effect */
     z-index: 99; /* Ensure the overlay appears below the popup */
 }
-#close{
-    visibility: visible;
-    z-index: 100;
-}
+
 
 #btn{
     display: none;
