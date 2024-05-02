@@ -468,3 +468,10 @@ input[type="radio"]:checked+.custom-radio::after {
 #btn{
     display: none;
 }
+
+#card_image{
+    width: 250px;
+    height: 250px; 
+    padding: 20p;
+    transition: background-color 0.5s ease; /* Smooth transition for color change */
+}

@@ -226,3 +226,17 @@ document.getElementById('close').addEventListener('click', function() {
     document.getElementById('popup-container').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
 });
+
+// Define an array of colors
+var colors = ['--main-color', '--variation-blue', '--variation-pink', '--variation-orange'];
+var currentIndex = 0;
+
+// Function to change the background color
+function changeColor() {
+    document.getElementById("card_image").style.backgroundColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length; // Move to the next color
+    setTimeout(changeColor, 1000); // Change color every second
+}
+
+// Call the function to start the color change loop
+changeColor();
