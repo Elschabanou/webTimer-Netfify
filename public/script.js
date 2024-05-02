@@ -211,7 +211,6 @@ window.onload = checkPopup;
 // Add event listener to the button
 document.getElementById('btn').addEventListener('click', function() {
     // Change the image source
-    document.getElementById('card-image').src = 'images/heart.png';
     document.getElementById("btn").style.display = "none";
     // Change the text of the card
     document.getElementById("btn_text") = 'I love you so much';
