@@ -213,7 +213,7 @@ document.getElementById('btn').addEventListener('click', function() {
     // Change the image source
     document.getElementById("btn").style.display = "none";
     // Change the text of the card
-    document.getElementById("card_text") = 'I love you so much';
+    document.getElementById("card_text").innerText = 'I love you so much';
     document.getElementById('close').style.visibility = "visible";
     document.getElementById('card-image').src = '/images/heart.png';
 
