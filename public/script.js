@@ -189,3 +189,24 @@ radioButtons.forEach(button => {
     });
 });
 
+// Function to check if the popup has been shown before
+function checkPopup() {
+    // Check if a 'popupShown' key exists in localStorage
+    if (!localStorage.getItem('popupShown')) {
+        // If not, show the popup
+        document.getElementById('popup-container').style.display = 'flex';
+        // Set 'popupShown' to true in localStorage to prevent showing the popup again
+        localStorage.setItem('popupShown', true);
+    }
+}
+
+// Call the checkPopup function when the page is loaded
+window.onload = checkPopup;
+
+// Add event listener to the button
+document.getElementById('btn').addEventListener('click', function() {
+    // Change the image source
+    document.getElementById('card-image').src = '/images/heart.png';
+    // Change the text of the card
+    document.querySelector('#popup-container h2').innerText = 'New Title';
+    document.querySelector('#popup-container p').innerText = 'New Description';
