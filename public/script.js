@@ -197,6 +197,8 @@ function checkPopup() {
         document.getElementById('popup-container').style.display = 'flex';
         // Set 'popupShown' to true in localStorage to prevent showing the popup again
         localStorage.setItem('popupShown', true);
+        document.getElementById('overlay').style.display = 'none';
+
     }
 }
 
