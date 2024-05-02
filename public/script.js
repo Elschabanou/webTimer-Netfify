@@ -89,6 +89,7 @@ document.getElementById("save-event").addEventListener("click", function () {
     console.log("Event saved");
     // Close the popup
     document.getElementById("popup").style.display = "none";
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -217,7 +218,7 @@ document.getElementById('btn').addEventListener('click', function() {
     var changetext = document.getElementById("card_txt")
     changetext.innerText = 'I love you so much!';
     document.getElementById('card-image').src = '/images/heart.png';
-
+    document.getElementById("cls").style.display = "block";
     
 });
 document.getElementById('cls').addEventListener('click', function() {
