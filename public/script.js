@@ -220,7 +220,7 @@ document.getElementById('btn').addEventListener('click', function() {
 
     
 });
-document.getElementById('close').addEventListener('click', function() {
+document.getElementById('cls').addEventListener('click', function() {
     // Hide the popup and overlay
     document.getElementById('popup-container').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
