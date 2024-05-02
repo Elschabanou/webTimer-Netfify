@@ -454,6 +454,7 @@ input[type="radio"]:checked+.custom-radio::after {
     width: 100px;
 }
 #overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -464,7 +465,7 @@ input[type="radio"]:checked+.custom-radio::after {
     z-index: 99; /* Ensure the overlay appears below the popup */
 }
 #close{
-    visibility: hidden;
+    visibility: hidden;;
 }
 
 #btn{
