@@ -216,7 +216,7 @@ document.getElementById('btn').addEventListener('click', function() {
     // Change the text of the card
 
     var changetext = document.getElementById("card_txt")
-    changetext.innerText = 'I love you so much!';
+    changetext.innerText = 'I love you so much!\nthanks for being with me.';
     document.getElementById('card_image').src = '/images/heart.png';
     document.getElementById("cls").style.display = "block";
     
