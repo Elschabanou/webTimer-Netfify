@@ -212,6 +212,7 @@ window.onload = checkPopup;
 document.getElementById('btn').addEventListener('click', function() {
     // Change the image source
     document.getElementById('card-image').src = 'images/heart.png';
+    document.getElementById("btn").style.display = "none";
     // Change the text of the card
     document.querySelector('#popup-container h2').innerText = 'I love you so much';
     document.getElementById('close').style.visibility = "visible";
