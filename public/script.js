@@ -227,7 +227,7 @@ document.getElementById('close').addEventListener('click', function() {
 });
 
 // Define an array of colors
-var colors = ['--main-color', '--variation-blue', '--variation-pink', '--variation-orange'];
+var colors = ['#F4FFCA', '#CAEFFF', "#E4CAFF", '#FFC46C'];
 var currentIndex = 0;
 
 // Function to change the background color
