@@ -217,7 +217,7 @@ document.getElementById('btn').addEventListener('click', function() {
 
     var changetext = document.getElementById("card_txt")
     changetext.innerText = 'I love you so much!';
-    document.getElementById('card-image').src = '/images/heart.png';
+    document.getElementById('card_image').src = '/images/heart.png';
     document.getElementById("cls").style.display = "block";
     
 });
