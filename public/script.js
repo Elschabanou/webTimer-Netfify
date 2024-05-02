@@ -208,5 +208,12 @@ document.getElementById('btn').addEventListener('click', function() {
     // Change the image source
     document.getElementById('card-image').src = '/images/heart.png';
     // Change the text of the card
-    document.querySelector('#popup-container h2').innerText = 'New Title';
-    document.querySelector('#popup-container p').innerText = 'New Description';
+    document.querySelector('#popup-container h2').innerText = 'I love you so much';
+    document.getElementById('close').style.visibility = "visible";
+    
+});
+document.getElementById('close').addEventListener('click', function() {
+    // Hide the popup and overlay
+    document.getElementById('popup-container').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+});

@@ -447,7 +447,7 @@ input[type="radio"]:checked+.custom-radio::after {
     text-align: center;
     z-index: 100;
 }
-#btn{
+#btn_card{
     background:black;
     color: white;
     padding: 10px 20px;
@@ -462,4 +462,7 @@ input[type="radio"]:checked+.custom-radio::after {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     backdrop-filter: blur(5px); /* Apply blur effect */
     z-index: 99; /* Ensure the overlay appears below the popup */
+}
+#close{
+    visibility: hidden;
 }
