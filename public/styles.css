@@ -296,11 +296,11 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #B2CF5A;
+    background-color: #313131;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #889d46;
+    background-color: #7a7a7a;
 }
 
 #login-form {
