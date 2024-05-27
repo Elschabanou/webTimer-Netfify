@@ -151,10 +151,9 @@ radioButtons.forEach(button => {
                     document.body.style.backgroundColor = "#F4FFCA";
                     document.getElementById("seconds").style.color = '#F4FFCA';
                     //date, border of event-card, slider, a in event-card
-                    let currentClass = document.querySelector('.event-card');
-                    if (currentClass) {
-                        currentClass.style.border = '1px solid #F4FFCA';
-                    }
+                    document.querySelectorAll('.event-card').forEach(function(element) {
+                        element.style.border = '1px solid #F4FFCA';
+                    });
                     document.querySelectorAll('.date').forEach(function(element) {
                         element.style.backgroundColor = '#F4FFCA';
                     });
@@ -164,6 +163,9 @@ radioButtons.forEach(button => {
                     document.getElementById("seconds").style.color = '#CAEFFF';
                     document.querySelectorAll('.date').forEach(function(element) {
                         element.style.backgroundColor = '#CAEFFF';
+                    });
+                    document.querySelectorAll('.event-card').forEach(function(element) {
+                        element.style.border = '1px solid #CAEFFF';
                     });
                     const elements = document.querySelectorAll('.event-card');
 
@@ -177,6 +179,9 @@ radioButtons.forEach(button => {
                     document.querySelectorAll('.date').forEach(function(element) {
                         element.style.backgroundColor = '#E4CAFF';
                     });
+                    document.querySelectorAll('.event-card').forEach(function(element) {
+                        element.style.border = '1px solid #E4CAFF';
+                    });
                     document.body.style.backgroundColor = '#E4CAFF';
                     document.getElementById("seconds").style.color = '#E4CAFF';
                     document.querySelector(".date").style.backgroundColor = "#E4CAFF";
@@ -185,12 +190,15 @@ radioButtons.forEach(button => {
                     document.querySelectorAll('.date').forEach(function(element) {
                         element.style.backgroundColor = '#FFC46C';
                     });
+                    document.querySelectorAll('.event-card').forEach(function(element) {
+                        element.style.border = '1px solid #FFC46C';
+                    });
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
                     document.querySelector(".date").style.backgroundColor = "#FFC46C";
                     break;
                 default:
-                    
+
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
 
