@@ -160,7 +160,9 @@ radioButtons.forEach(button => {
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
-
+                    document.querySelectorAll('.date').forEach(function(element) {
+                        element.style.backgroundColor = 'blue';
+                    });
                     const elements = document.querySelectorAll('.event-card');
 
                     // Iterate over each element and change its color
