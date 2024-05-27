@@ -160,6 +160,10 @@ radioButtons.forEach(button => {
                     document.querySelectorAll(".title").forEach(function(element) {
                         element.style.color = "#F4FFCA";
                     });
+                    document.querySelectorAll('h2').forEach(function(element) {
+                        element.style.color = '#B2CF5A';
+                    });
+                    
                     break;
                 case 'option2':
                     document.body.style.backgroundColor = '#CAEFFF';
@@ -173,6 +177,9 @@ radioButtons.forEach(button => {
                     document.querySelectorAll(".title").forEach(function(element) {
                         element.style.color = "#CAEFFF";
                     });
+                    document.querySelectorAll('h2').forEach(function(element) {
+                        element.style.color = '#4292e8';
+                    });
                     break;
 
                 case 'option3':
@@ -184,6 +191,9 @@ radioButtons.forEach(button => {
                     });
                     document.querySelectorAll(".title").forEach(function(element) {
                         element.style.color = "#E4CAFF";
+                    });
+                    document.querySelectorAll('h2').forEach(function(element) {
+                        element.style.color = '#ce54e3';
                     });
                     document.body.style.backgroundColor = '#E4CAFF';
                     document.getElementById("seconds").style.color = '#E4CAFF';
@@ -199,6 +209,9 @@ radioButtons.forEach(button => {
                     });
                     document.querySelectorAll('.title').forEach(function(element) {
                         element.style.color = "#FFC46C";
+                    });
+                    document.querySelectorAll('h2').forEach(function(element) {
+                        element.style.color = '#ffe19b';
                     });
                     document.body.style.backgroundColor = '#FFC46C';
                     document.getElementById("seconds").style.color = '#FFC46C';
