@@ -161,7 +161,7 @@ radioButtons.forEach(button => {
                     document.body.style.backgroundColor = '#CAEFFF';
                     document.getElementById("seconds").style.color = '#CAEFFF';
                     document.querySelectorAll('.date').forEach(function(element) {
-                        element.style.backgroundColor = 'blue';
+                        element.style.backgroundColor = '#CAEFFF';
                     });
                     const elements = document.querySelectorAll('.event-card');
 
